@@ -69,7 +69,7 @@ body::before {
     z-index: -1; 
 
     
-    background-image: url('/media/abstract-texture-simple-simple-background-wallpaper-preview.jpg');
+    background-color: navy;
     background-size: cover;
     background-position: center;
     filter: blur(8px); 
