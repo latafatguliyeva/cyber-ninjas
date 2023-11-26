@@ -1,0 +1,247 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+
+body {
+	line-height: 1;
+    
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*******************************/
+
+
+
+
+
+body{
+    width: 100%;
+    height: 120vh;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+ 
+body::before {
+    content: '';
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+
+    
+    background-image: url('/images/simple-background-wallpaper-preview.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px); 
+    -webkit-filter: blur(8px);
+
+    
+    background-color: rgba(0,0,0,0.2);
+    background-blend-mode: overlay;
+}
+.welcome{
+  display: flex;
+  justify-content: space-between;
+}
+#animatedText{
+  margin:  20px 60px;
+  color: white;
+  font-size: 40px;
+  font-weight: 600;
+ 
+}
+
+
+.mail{
+  margin-right: 100px;
+}
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    
+}
+
+
+.welcome button{
+  margin: 30px;
+  background-color: white;
+  color: blue;
+  padding: 10px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 100px;
+    align-items: center;
+    background-color: rgb(0, 27, 46);
+    z-index: 1;
+    margin-bottom: 50px;
+    color: white;
+    
+}
+
+.logo-div img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+
+.nav-texts a{
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px; 
+    transition: font-size 1s, box-shadow 1s;
+    font-weight: 800;
+    
+  }
+
+ 
+  a:hover {
+    transform: scale(1.1);
+    font-size: 22px; 
+    font-weight: 900;
+    border-bottom: 1px solid black; 
+    box-shadow: 0px 3px 3px -2px rgba(0,0,0,0.5); 
+    box-sizing: border-box;
+  }
+h1{
+    margin-left: 100px;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+}
+  .person-cards{
+    display: grid;
+    grid-template-columns: auto auto ;
+   
+  }
+.card{
+   
+    text-align: center;
+    margin: 100px auto;
+    border: 1px solid black;
+    padding: 31px;
+    background-color: rgb(255, 251, 245);
+    border-radius: 10px;
+    width: 500px;
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px, rgba(255, 255, 255, 0.12) 0px -12px 30px, rgba(255, 255, 255, 0.12) 0px 4px 6px, rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(255, 255, 255, 0.09) 0px -3px 5px;
+}
+  .card-img img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+  }
+
+  .card-img{
+    margin-bottom: 10px;
+    margin: 10px 0;
+  }
+
+  .name{
+    font-size: 30px;
+    font-weight: 700;
+    margin: 20px;
+  }
+
+  .position{
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .des{
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  button{
+    font-size: 16px;
+    font-weight: 700;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: rgb(33, 41, 57);
+    padding: 10px;
+    color: white;
+  }
+
+  .HOC{
+    border: 1px solid black;
+    background-color: white;
+    padding: 30px;
+    display: flex;
+    border-radius: 10px;
+    margin: 0 50px;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .hoc-text{
+   background-color: rgb(255, 255, 255);
+   margin-left: 50px;
+  }
+
+  .hoc-logo img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+
+  #hoc-header{
+    margin: 20px 0;
+    font-size: 34px;
+    font-weight: 800;
+  }
+
+  #hoc-des{
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 30px;
+  }

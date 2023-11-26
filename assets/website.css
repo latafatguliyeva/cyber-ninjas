@@ -1,0 +1,29 @@
+
+
+
+table, th, td {
+    border: 1px solid rgb(255, 255, 255);
+    border-collapse: collapse;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    background-color: rgb(196, 197, 242);
+    margin-top: 60px;
+    
+  }
+  th {
+    text-align: center;
+    font-weight: 800;
+    font-size: 24px;
+
+  }
+
+  main{
+    padding: 20px 60px;
+  }
+
+  table td a{
+    color: rgb(23, 0, 77);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 15px;
+  }
